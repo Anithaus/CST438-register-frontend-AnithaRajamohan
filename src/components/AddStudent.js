@@ -6,7 +6,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
 import { ToastContainer, toast } from 'react-toastify';
 
 
@@ -67,10 +66,7 @@ class AddStudent extends Component {
 
     render()  { 
         return (
-            <div>
-                <Typography variant="h6" color="inherit">
-                  { 'Student ' }
-                </Typography>
+            <div>              
               <Button variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen}>
                 Add Student
               </Button>
