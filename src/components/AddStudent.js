@@ -67,7 +67,7 @@ class AddStudent extends Component {
     render()  { 
         return (
             <div>              
-              <Button variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen}>
+              <Button variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen} id="AddStudent">
                 Add Student
               </Button>
               <Dialog open={this.state.open} onClose={this.handleClose}>
@@ -81,7 +81,7 @@ class AddStudent extends Component {
                     <Button id="Add" color="primary" onClick={this.handleAdd}>Add</Button>
                   </DialogActions>
                 </Dialog> 
-                <ToastContainer autoClose={1500} />   
+                <ToastContainer autoClose={1500} id="toast"/>   
             </div>
         ); 
       }
