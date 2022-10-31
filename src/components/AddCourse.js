@@ -27,7 +27,7 @@ class AddCourse extends Component {
       this.setState({course:{course_id: event.target.value}});
     }
 
-  // Save course and close modal form
+  // Save course and close modal form add
     handleAdd = () => {
        this.props.addCourse(this.state.course);
        this.handleClose();

@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { ToastContainer, toast } from 'react-toastify';
 
-
+//add
 class AddStudent extends Component {
     constructor(props) {
         super(props);
@@ -67,7 +67,7 @@ class AddStudent extends Component {
     render()  { 
         return (
             <div>              
-              <Button variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen}>
+              <Button variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen} id="AddStudent">
                 Add Student
               </Button>
               <Dialog open={this.state.open} onClose={this.handleClose}>
@@ -81,7 +81,7 @@ class AddStudent extends Component {
                     <Button id="Add" color="primary" onClick={this.handleAdd}>Add</Button>
                   </DialogActions>
                 </Dialog> 
-                <ToastContainer autoClose={1500} />   
+                <ToastContainer autoClose={1500} id="toast"/>   
             </div>
         ); 
       }
